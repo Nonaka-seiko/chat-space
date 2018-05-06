@@ -67,7 +67,7 @@ Things you may want to cover:
 |Colum|Type|Option|
 |-----|----|------|
 |body|text|null: fales|
-|image|string|  |
+|image|string|
 |group_id|integer|foreign_key: true|
 |user_id|integer|foreign_key: true|
 
