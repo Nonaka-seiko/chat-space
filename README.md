@@ -25,7 +25,7 @@
 
 ### Association
 
--has_many :users, through::group_users table
+-has_many :users, through::group_users tabl
 
 -has_many :group_users
 
