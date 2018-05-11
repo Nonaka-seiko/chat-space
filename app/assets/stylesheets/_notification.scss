@@ -1,7 +1,8 @@
 .notification {
-  color: #FFFFFF;
-  background-color: #38AEF0;
+  color: $primary;
+  background-color: $mainBllueColor;
   text-align: center;
   height: 30px;
   line-height: 30px;
+  box-sizing: border-box;
 }

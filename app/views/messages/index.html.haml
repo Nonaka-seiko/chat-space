@@ -2,11 +2,28 @@
   .notification
     チャットスペースが作成されました
   .side_bar
-    = render 'shared/side_bar__head'
-    = render 'shared/side_bar__bottom'
+    .side_bar__head
+      %ul
+        %li.side_bar__head__user_name
+          seiko
+        %li.side_bar__head__icon_setting
+          =link_to 'https://qiita.com/trend', class: "side_bar__head__icon_setting" do
+            =fa_icon "cog"
+        %li.side_bar__head__icon_new_message
+          =link_to 'https://qiita.com/trend', class: "side_bar__head__icon_new_message" do
+            =fa_icon "edit"
+    .side_bar__bottom
+      .side_bar__bottom__group_name
+        グループ名１
+      .side_bar__bottom__latest_message
+        グループ１最新メッセージ
+      .side_bar__bottom__group_name
+        グループ名２
+      .side_bar__bottom__latest_message
+        グループ２最新メッセージ
   .main_content
     = render 'shared/main_content__head'
     = render 'shared/main_content__chat_space'
-  .fotter_form
-    = render 'shared/fotter_form__text'
-    = render 'shared/fotter_form__input'
+  .footer_form
+    = render 'shared/footer_form__text'
+    = render 'shared/footer_form__input'

@@ -1,4 +1,4 @@
-.fotter_form {
+.footer_form {
   background-color: #999999;
   height: 90px;
   width: calc(100vw - 300px);
@@ -7,7 +7,7 @@
   float: right;
 
   &__text {
-    background-color: white;
+    background-color: $primary;
     height: 50px;
     width: calc(100% - 105px);
     float: left;
@@ -30,7 +30,7 @@
   }
 
   &__input {
-    background-color: #38AEF0;
+    background-color: $mainBllueColor;
     float: right;
     color: white;
     width: 90px;

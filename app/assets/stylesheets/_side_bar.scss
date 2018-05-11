@@ -7,12 +7,12 @@
 
   &__head {
     height: 100px;
-    background-color: #253141;
     box-sizing: border-box;
+    background-color: #253141;
     padding: 40px 20px 0 20px;
 
     &__user_name {
-    color: #FFFFFF;
+    color: $primary;
     font-size: 16px;
     font-weight: bold;
     float: left;
@@ -20,29 +20,30 @@
 
     &__icon_setting {
       float: right;
-      color: #FFFFFF;
+      color: $primary;
       font-size: 20px;
     }
 
     &__icon_new_message {
       padding-right: 5px;
       float: right;
-      color: #FFFFFF;
+      color: $primary;
       font-size: 20px;
     }
   }
   &__bottom {
     padding: 20px 20px 0 20px;
+    box-sizing: border-box;
 
     &__group_name {
       margin: 20px 0 5px 0;
       font-size: 15px;
-      color: #FFFFFF;
+      color: $primary;
     }
 
     &__latest_message {
       margin-bottom: 40px;
-      color: #FFFFFF;
+      color: $primary;
       font-size: 11px;
     }
   }
