@@ -1,0 +1,26 @@
+.main_content__chat_space {
+  box-sizing: border-box;
+  background-color: #AAAAAA;
+  height: calc(100vh - 190px);
+  padding-top: 6px;
+
+  &__user_name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #434A54;
+    padding: 40px 0 0 40px;
+  }
+
+  &__created_at {
+    all: initial;
+    font-size: 12px;
+    color: #999999;
+    padding: 0 0 0 10px;
+  }
+
+  &__comment {
+    font-size: 14px;
+    color: #434A54;
+    padding: 10px 0 0 40px;
+  }
+}
