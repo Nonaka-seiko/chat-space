@@ -2,9 +2,12 @@
 @import "./_variable";
 @import "./font-awesome";
 @import "./_notification";
+@import "./config/colors";
+@import "./modules/flash";
 @import "./_side_bar";
 @import "./_main_content";
 @import "./_main_content__head";
 @import "./_main_content__chat_space";
 @import "./_footer_form";
-
+@import "./_users";
+@import "./_group";
