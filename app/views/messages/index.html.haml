@@ -13,14 +13,12 @@
           = link_to new_group_path do
             = fa_icon 'pencil-square-o', class: 'icon'
     .side_bar__bottom
-      .side_bar__bottom__group_name
-        グループ名１
-      .side_bar__bottom__latest_message
-        グループ１最新メッセージ
-      .side_bar__bottom__group_name
-        グループ名２
-      .side_bar__bottom__latest_message
-        グループ２最新メッセージ
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group) do
+          .side_bar__bottom__group_name
+            = group.name
+          .side_bar__bottom__latest_message
+            メッセージはまだありません。
   .main_content
     = render 'shared/main_content__head'
     = render 'shared/main_content__chat_space'
