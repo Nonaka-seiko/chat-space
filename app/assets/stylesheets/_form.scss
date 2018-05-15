@@ -1,0 +1,36 @@
+.form {
+  // height: 50px;
+  background-color: #999;
+  width: calc(100% - 380px);
+  float: right;
+  padding: 20px 40px;
+  .form__message{
+    height: 45px;
+    width: calc(100% - 110px);
+    padding-left: 10px;
+    font-size: 16px;
+    float: left;
+  }
+  .form__mask{
+    .form__mask__image{
+      .icon{
+        position: absolute;
+        right: 150px;
+        line-height: 50px;
+      }
+      .hidden{
+        display: none;
+      }
+    }
+  }
+    .form__submit{
+      background-color: #38AEF0;
+      font-size: 16px;
+      width: 85px;
+      height: 50px;
+      text-align: center;
+      color: white;
+      float: right;
+    }
+}
+

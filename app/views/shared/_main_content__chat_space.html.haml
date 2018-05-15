@@ -1,13 +1,9 @@
 .main_content__chat_space
-  .main_content__chat_space__user_name
-    seiko
-    .main_content__chat_space__created_at
-      2016/10/02 06:27:07
-  .main_content__chat_space__comment
-    comment1
-  .main_content__chat_space__user_name
-    seiko
-    .main_content__chat_space__created_at
-      2016/10/02 06:27:07
-  .main_content__chat_space__comment
-    comment2
+  - @messages.each do |message|
+    .main_content__chat_space__user_name
+      = message.user.name
+      %span.main_content__chat_space__created_at
+        = message.created_at
+    .main_content__chat_space__comment
+      = message.content
+      = image_tag message.image.url if message.image.present?

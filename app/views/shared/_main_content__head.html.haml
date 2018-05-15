@@ -1,7 +1,8 @@
 .main_content__head
   .main_content__head__group_name
-    sampleグループ
-  .main_content__head__group_edit
-    Edit
-  .main_content__head__group_member
-    seiko
+    = @group.name
+  =link_to "Edit", edit_group_path(@group), class: "main_content__head__group_edit"
+  - @group.users.each do |user|
+    .main_content__head__group_member
+      Member:
+      = user.name
