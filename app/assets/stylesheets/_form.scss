@@ -1,11 +1,11 @@
 .form {
-  height: 50px;
+  // height: 50px;
   background-color: #999;
   width: calc(100% - 380px);
   float: right;
   padding: 20px 40px;
   .form__message{
-    height: 50px;
+    height: 45px;
     width: calc(100% - 110px);
     padding-left: 10px;
     font-size: 16px;
@@ -22,9 +22,15 @@
         display: none;
       }
     }
-    .form__submit{
-      font-size: 20px;
-    }
   }
+    .form__submit{
+      background-color: #38AEF0;
+      font-size: 16px;
+      width: 85px;
+      height: 50px;
+      text-align: center;
+      color: white;
+      float: right;
+    }
 }
 
