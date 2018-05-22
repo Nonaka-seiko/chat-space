@@ -3,6 +3,7 @@
   background-color: #AAAAAA;
   height: calc(100vh - 190px);
   padding-top: 6px;
+  overflow: scroll;
 
   &__user_name {
     font-size: 16px;
