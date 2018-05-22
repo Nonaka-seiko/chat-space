@@ -6,4 +6,4 @@
         = message.created_at
     .main_content__chat_space__comment
       = message.content
-      = image_tag message.image.url if message.image.present?
+      = image_tag message.image.url, class: 'main_content__chat_space__comment__image' if message.image.present?
