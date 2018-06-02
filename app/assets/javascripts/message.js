@@ -18,7 +18,7 @@ $(function(){
         $('.main_content__chat_space').append(insertHTML);
         $('.main_content__chat_space').animate({ scrollTop: $('.main_content__chat_space').get(0).scrollHeight },'slow');
       })
-      .fail(function(json){
+      .fail(function(){
         alert('自動更新に失敗しました');
       });
     } else {
