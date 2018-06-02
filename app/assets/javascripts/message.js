@@ -1,19 +1,17 @@
 $(function(){
   var interval = setInterval(function() {
-    var id = $('.main_content__chat_space__user_name').last().data('message-id');
+    var messageId = $('.main_content__chat_space__user_name').last().data('message-id');
     if (location.pathname.match(/\/groups\/\d+\/messages/)) {
       $.ajax({
         url: location.pathname,
         type: 'GET',
-        data: { id: id },
+        data: { id: messageId },
         dataType: 'json',
       })
       .done(function(json){
         var insertHTML = '';
         json.new_message.forEach(function(message){
-          if (message.id > id){
           insertHTML += buildHTML(message);
-          }
         });
         $('.main_content__chat_space').append(insertHTML);
         $('.main_content__chat_space').animate({ scrollTop: $('.main_content__chat_space').get(0).scrollHeight },'slow');
