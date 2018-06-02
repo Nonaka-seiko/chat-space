@@ -1,11 +1,11 @@
 $(function(){
   var interval = setInterval(function() {
-    var messageId = $('.main_content__chat_space__user_name').last().data('message-id');
+    var lastMessageId = $('.main_content__chat_space__user_name').last().data('message-id');
     if (location.pathname.match(/\/groups\/\d+\/messages/)) {
       $.ajax({
         url: location.pathname,
         type: 'GET',
-        data: { id: messageId },
+        data: { id: lastMessageId },
         dataType: 'json',
       })
       .done(function(json){
